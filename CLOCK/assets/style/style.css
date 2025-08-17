@@ -1,0 +1,63 @@
+html{
+    background: url(/CLOCK/assets/images/img.jpg);
+    background-size: cover;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body,html{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clock{
+    width: 20rem;
+      height: 20rem;
+      border: 20px solid white;
+      border-radius: 50%;
+    position: relative;
+      padding: 2rem;
+      box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.42, 0, 1, 0.07);
+}
+ .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px);
+    }
+
+
+.hour-hand {
+  height: 8px;
+  background: black;
+}
+
+.min-hand {
+  height: 6px;
+  background: darkblue;
+}
+
+.sec-hand {
+  height: 2px;
+  background: red;
+}
